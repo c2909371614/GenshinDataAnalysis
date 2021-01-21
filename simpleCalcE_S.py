@@ -10,15 +10,16 @@ def Get_Input():
 	DA = float(input('输入伤害加成：'))
 	return [CR,CD,DA,ATK]
 def Get_Txt():
-	with open('原神角色数值/七七面板.txt', 'r') as file:
+	with open('原神角色数值/雷泽面板.txt', 'r') as file:
 		ATK = float(file.readline())
 		CR = float(file.readline())
 		CD = float(file.readline())
 		DA = float(file.readline())
 	return [CR,CD,DA,ATK]
 	# print(CR,CD,DA,ATK)
-CR,CD,DA,ATK = Get_Txt()
+CR,CD,DA,ATK = Get_Input()
 print('ATK:%.0f\nCR:%.3f\nCD:%.3f\nDA:%.3f'%(ATK,CR,CD,DA))
 E_S = ATK*(1+CR*CD)*(1+DA)
 
 print('预期伤害：%.2f' %E_S)
+input()
