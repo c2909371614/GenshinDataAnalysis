@@ -1,6 +1,11 @@
 #coding = utf-8
 #author = cpx
+'''
+#-------------------------------
+绘制资源图
 
+#-------------------------------
+'''
 from matplotlib.font_manager import FontProperties#设置显示中文
 import matplotlib.pyplot as plt
 import Relics_Attribute_Analysis as Relics_Data 
@@ -8,7 +13,7 @@ import Relics_Attribute_Analysis as Relics_Data
 add_exps = Relics_Data.add_exps
 grade = Relics_Data.grade
 attributes_main = Relics_Data.attributes_main.copy()
-for key in attributes_main.keys():
+for key in attributes_main.keys(): 
 	print(key,attributes_main[key])
 
 

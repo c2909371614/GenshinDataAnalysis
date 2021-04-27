@@ -1,8 +1,5 @@
-#coding = utf-8
-#author = cpx
-#created time = 2021-04-19 09:21:55
-ATK_0 = 975
-ATK_1 = 0.4
+ATK_0 = 800
+ATK_1 = 0
 CR_0 = 0
 CD_0 = 0.5
 EDA_0 = 0.6
@@ -24,4 +21,3 @@ for ATK in range(4,25):
 			ans = Damage
 			print('第%d种：'%count, 'ATK:',ATK,'CR:',CR, 'CD:',CD)
 			print('ATK:',ATK_temp, 'CR:%.2f'% CR_temp, 'CD:',CD_temp,'ExpDamage:%d'%ans)
-			# print("ATK:%.0f CR：%.2f% CD：%.2f"%(ATK_temp, CR_temp*100, CD_temp*100))

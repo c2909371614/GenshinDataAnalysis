@@ -3,6 +3,8 @@
 Created on Thu Nov 26 08:34:17 2020
 
 @author: cpx
+以多元线性模型进行建模
+效果很差
 """
 import numpy as np
 import pandas as pd
